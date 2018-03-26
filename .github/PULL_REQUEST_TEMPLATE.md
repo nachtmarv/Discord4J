@@ -1,13 +1,12 @@
-### Prerequisites
-* [ ] I have read and understood the [contribution guidelines](CONTRIBUTING.md)
-* [ ] This pull request follows the code style of the project
-* [ ] I have tested this feature thoroughly
-  * [Proof of testing](screenshot, any evidence you tested this pull request)
+<!--
+IF YOU DON'T FOLLOW THIS TEMPLATE YOUR PULL REQUEST MAY BE CLOSED.
+-->
 
-**Issues Fixed:** [The issues fixed by this pull request]
+**This is a...**
+<!-- Check one with "x" -->
+- [ ] Bug Fix
+- [ ] Feature implementation
+- [ ] Other
 
-### Changes Proposed in this Pull Request
-* [Change 1]
-* [Change 2]
-
-...
+### Description
+<!-- Information on the change you are making. You may link to an issue here. -->

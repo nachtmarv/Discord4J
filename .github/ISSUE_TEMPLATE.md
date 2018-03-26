@@ -1,24 +1,24 @@
-### Prerequisites
-* [ ] If this is a question/suggestion, I have already considered talking about it on the [Discord4J server](https://discord.gg/NxGAeCY)
-* [ ] This issue specifically has something to do with Discord4J
-* [ ] I have attempted to [look for similar issues](https://github.com/austinv11/Discord4J/issues?utf8=%E2%9C%93&q=is%3Aissue) already
+<!--
+IF YOU DON'T FOLLOW THIS TEMPLATE YOUR ISSUE MAY BE CLOSED.
+
+If this is a support question, consider asking it on the Discord4J Server instead: https://discord.gg/NxGAeCY
+
+Please search for similar issues before openning a new one.
+-->
+
+**This is a...**
+<!-- Check one with "x" -->
+- [ ] Bug Report
+- [ ] Feature Request
+- [ ] Other
 
 ### Description
-[Description of the issue]
+<!-- General description of the issue. -->
 
-### Steps to Reproduce
-1. [First step]
-2. [Second step]
-
-...
-
-**Expected behavior:** [What was supposed to happen]
-
-**Actual behavior:** [What actually happened]
-
-**Stacktrace (if applicable):** [PASTEBIN or HASTEBIN link to the stacktrace]
-
-**Version affected:** [The version of Discord4J]
+### Reproduction
+<!-- If your issue is regarding a bug, describe SPECIFIC, MINIMAL steps which can be used to reproduce the issue. -->
 
 ### Additional Information
-[Any other information that may be able to help me with the problem]
+<!-- Any more information pertinent to the issue. -->
+
+**Affected Version**:
