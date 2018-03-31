@@ -41,6 +41,7 @@ allprojects {
     apply plugin: 'maven-publish'
     apply plugin: 'io.spring.dependency-management'
     apply plugin: 'com.gorylenko.gradle-git-properties'
+    apply plugin: 'jacoco'
 
     sourceCompatibility = project_jdk
     targetCompatibility = project_jdk
@@ -98,6 +99,25 @@ allprojects {
     }
 
     shadowJar.dependsOn(assemble)
+}
+
+task codeCoverageReport(type: JacocoReport) {
+    executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/*.exec")
+
+    subprojects.each {
+        sourceSets it.sourceSets.main
+    }
+
+    reports {
+        xml.enabled true
+        xml.destination "${buildDir}/reports/jacoco/report.xml"
+        html.enabled false
+        csv.enabled false
+    }
+}
+
+codeCoverageReport.dependsOn {
+    subprojects*.test
 }
 
 task wrapper(type: Wrapper) {

@@ -61,7 +61,7 @@ job_definition: &job_definition
     # build everything needed for publication
     - run:
         name: Building Project
-        command: ./gradlew --max-workers 2 --continue test
+        command: ./gradlew --max-workers 2 --continue check codeCoverageReport
 
     # cache gradle build caches
     - run:
@@ -90,6 +90,12 @@ job_definition: &job_definition
         path: ~/junit
     - store_artifacts:
         path: ~/junit
+
+    # code coverage
+    - run:
+        name: Save coverage report
+        command: |
+          bash <(curl -s https://codecov.io/bash);
 
 jobs:
   jvm8:
