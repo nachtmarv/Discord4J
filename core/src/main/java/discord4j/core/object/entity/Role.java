@@ -58,7 +58,7 @@ public final class Role implements Entity, Positionable {
 
     @Override
     public DiscordClient getClient() {
-        return serviceMediator.getClient();
+        return serviceMediator.getDiscordClient();
     }
 
     @Override

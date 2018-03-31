@@ -60,7 +60,7 @@ public final class Reaction implements DiscordObject {
 
     @Override
     public DiscordClient getClient() {
-        return serviceMediator.getClient();
+        return serviceMediator.getDiscordClient();
     }
 
     /**

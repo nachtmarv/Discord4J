@@ -42,7 +42,7 @@ public final class ServiceMediator {
         return restClient;
     }
 
-    public DiscordClient getClient() {
+    public DiscordClient getDiscordClient() {
         return discordClient;
     }
 

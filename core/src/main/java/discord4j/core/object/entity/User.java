@@ -51,7 +51,7 @@ public class User implements Entity {
 
     @Override
     public final DiscordClient getClient() {
-        return serviceMediator.getClient();
+        return serviceMediator.getDiscordClient();
     }
 
     /**

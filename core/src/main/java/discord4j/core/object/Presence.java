@@ -53,7 +53,7 @@ public final class Presence implements DiscordObject {
 
     @Override
     public DiscordClient getClient() {
-        return serviceMediator.getClient();
+        return serviceMediator.getDiscordClient();
     }
 
     /**

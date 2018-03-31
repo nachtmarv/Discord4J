@@ -21,14 +21,16 @@ import discord4j.core.object.Snowflake;
 import discord4j.core.object.entity.MessageChannel;
 import reactor.core.publisher.Mono;
 
+import javax.annotation.Nullable;
 import java.time.Instant;
+import java.util.Optional;
 
 public class PinsUpdateEvent extends ChannelEvent {
 
     private final long channelId;
     private final Instant lastPinTimestamp;
 
-    public PinsUpdateEvent(DiscordClient client, long channelId, Instant lastPinTimestamp) {
+    public PinsUpdateEvent(DiscordClient client, long channelId, @Nullable Instant lastPinTimestamp) {
         super(client);
         this.channelId = channelId;
         this.lastPinTimestamp = lastPinTimestamp;
@@ -42,7 +44,7 @@ public class PinsUpdateEvent extends ChannelEvent {
         throw new UnsupportedOperationException("Not yet implemented...");
     }
 
-    public Instant getLastPinTimestamp() {
-        return lastPinTimestamp;
+    public Optional<Instant> getLastPinTimestamp() {
+        return Optional.ofNullable(lastPinTimestamp);
     }
 }

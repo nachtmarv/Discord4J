@@ -51,7 +51,7 @@ public class Invite implements DiscordObject {
 
     @Override
     public final DiscordClient getClient() {
-        return serviceMediator.getClient();
+        return serviceMediator.getDiscordClient();
     }
 
     /**
